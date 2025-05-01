@@ -2,6 +2,8 @@
 
 TaskClock Guardian - For your child's academic performance
 
+<img src="https://github.com/user-attachments/assets/83f238a7-13fd-42a5-93b8-4bb68dec4244" width=70%>
+
 [![Static Badge](https://img.shields.io/badge/Download%20Now!-green?style=for-the-badge)](https://github.com/Eth4nplays/TaskClock-Guardian/releases) [![Static Badge](https://img.shields.io/badge/Try%20TaskClock%20Guardian%20Online!-brown?style=for-the-badge)](https://eth4nplays.github.io/TaskClock/guardian/)
 
 
