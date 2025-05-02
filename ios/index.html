@@ -4,153 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TaskClock iOS Install</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      background: #fafafa;
-      padding: 20px;
-    }
 
-    h2 {
-      text-align: center;
-    }
+<sup>⚠ Limitations: Notifications aren't supported in IOS version.<sup>
+<details>
+  <summary><strong>Step 1: Press on this button over here</strong></summary>
+  <a href="https://eth4nplays.github.io/TaskClock/guardian/">
+    <img src="https://img.shields.io/badge/Click%20Here-brown?style=for-the-badge">
+  </a>
+</details>
 
-    .note {
-      font-size: 0.9rem;
-      color: #cc0000;
-      text-align: center;
-      margin-bottom: 10px;
-    }
+<details>
+  <summary><strong>Step 2: Press the share button</strong></summary>
+  <img src="https://static.wixstatic.com/media/cb3499_19683478fd5a4e198f7ffffd9f8d1df7~mv2.jpg" width="250">
+</details>
 
-    .carousel-container {
-      position: relative;
-      width: 100%;
-      max-width: 350px;
-      margin: 0 auto;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+<details>
+  <summary><strong>Step 3: Select Add to Home Screen</strong></summary>
+  <img src="https://static.wixstatic.com/media/cb3499_76807ad291a442d9bee1a34f42369231~mv2.jpg" width="250">
+</details>
 
-    .carousel {
-      display: flex;
-      transition: transform 0.4s ease-in-out;
-    }
+<details>
+  <summary><strong>Step 4: Press Add</strong></summary>
+  <img src="https://static.wixstatic.com/media/cb3499_a988b36801be4e43ba7fc2f34a38321f~mv2.jpg" width="250">
+</details>
 
-    .slide {
-      min-width: 100%;
-      box-sizing: border-box;
-      padding: 15px;
-      background: #fff;
-      text-align: center;
-    }
+<details>
+  <summary><strong>Step 5: Open TaskClock Guardian</strong></summary>
+  <img src="https://static.wixstatic.com/media/cb3499_5e0ccf3b1410405c88b762e26459e809~mv2.jpg" width="250">
+</details>
 
-    .slide img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
+<details>
+  <summary><strong>Step 6: Congrats! You're done</strong></summary>
+  <img src="https://static.wixstatic.com/media/cb3499_f7eff2b63a85496cb2460f46e6c17067~mv2.jpg" width="250">
+</details>
 
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 15px;
-    }
-
-    .buttons button {
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      background-color: #8b4513;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .buttons button:disabled {
-      background-color: #ccc;
-      cursor: not-allowed;
-    }
-
-    a.badge-link img {
-      margin-top: 10px;
-    }
-  </style>
-</head>
-<body>
-
-  <h2>📲 iOS Install Guide</h2>
-  <p class="note">⚠ Limitations: Notifications aren't supported in iOS version.</p>
-
-  <div class="carousel-container">
-    <div class="carousel" id="carousel">
-      <div class="slide">
-        <strong>Step 1: Press on this button</strong><br>
-        <a class="badge-link" href="https://eth4nplays.github.io/TaskClock/guardian/">
-          <img src="https://img.shields.io/badge/Click%20Here-brown?style=for-the-badge" alt="Click Here">
-        </a>
-      </div>
-      <div class="slide">
-        <strong>Step 2: Press the share button</strong>
-        <img src="https://static.wixstatic.com/media/cb3499_19683478fd5a4e198f7ffffd9f8d1df7~mv2.jpg" alt="Share Button">
-      </div>
-      <div class="slide">
-        <strong>Step 3: Select Add to Home Screen</strong>
-        <img src="https://static.wixstatic.com/media/cb3499_76807ad291a442d9bee1a34f42369231~mv2.jpg" alt="Add to Home">
-      </div>
-      <div class="slide">
-        <strong>Step 4: Press Add</strong>
-        <img src="https://static.wixstatic.com/media/cb3499_a988b36801be4e43ba7fc2f34a38321f~mv2.jpg" alt="Press Add">
-      </div>
-      <div class="slide">
-        <strong>Step 5: Open TaskClock Guardian</strong>
-        <img src="https://static.wixstatic.com/media/cb3499_5e0ccf3b1410405c88b762e26459e809~mv2.jpg" alt="Open App">
-      </div>
-      <div class="slide">
-        <strong>Step 6: Congrats! You're done 🎉</strong>
-        <img src="https://static.wixstatic.com/media/cb3499_f7eff2b63a85496cb2460f46e6c17067~mv2.jpg" alt="Success">
-      </div>
-    </div>
-  </div>
-
-  <div class="buttons">
-    <button id="prev" disabled>&larr; Back</button>
-    <button id="next">Next &rarr;</button>
-  </div>
-
-  <script>
-    const carousel = document.getElementById("carousel");
-    const prev = document.getElementById("prev");
-    const next = document.getElementById("next");
-
-    let currentIndex = 0;
-    const totalSlides = document.querySelectorAll(".slide").length;
-
-    function updateButtons() {
-      prev.disabled = currentIndex === 0;
-      next.disabled = currentIndex === totalSlides - 1;
-    }
-
-    function showSlide(index) {
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-      currentIndex = index;
-      updateButtons();
-    }
-
-    prev.addEventListener("click", () => {
-      if (currentIndex > 0) {
-        showSlide(currentIndex - 1);
-      }
-    });
-
-    next.addEventListener("click", () => {
-      if (currentIndex < totalSlides - 1) {
-        showSlide(currentIndex + 1);
-      }
-    });
-
-    updateButtons();
-  </script>
 </body>
 </html>
