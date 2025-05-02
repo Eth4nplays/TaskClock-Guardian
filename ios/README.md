@@ -1,0 +1,33 @@
+# IOS Install
+<sup>⚠ Limitations: Notifications aren't supported in IOS version.<sup>
+<details>
+  <summary><strong>Step 1: Press on this button over here</strong></summary>
+  <a href="https://eth4nplays.github.io/TaskClock/guardian/">
+    <img src="https://img.shields.io/badge/Click%20Here-brown?style=for-the-badge">
+  </a>
+</details>
+
+<details>
+  <summary><strong>Step 2: Press the share button</strong></summary>
+  <img src="https://static.wixstatic.com/media/cb3499_19683478fd5a4e198f7ffffd9f8d1df7~mv2.jpg" width="250">
+</details>
+
+<details>
+  <summary><strong>Step 3: Select Add to Home Screen</strong></summary>
+  <img src="https://static.wixstatic.com/media/cb3499_76807ad291a442d9bee1a34f42369231~mv2.jpg" width="250">
+</details>
+
+<details>
+  <summary><strong>Step 4: Press Add</strong></summary>
+  <img src="https://static.wixstatic.com/media/cb3499_a988b36801be4e43ba7fc2f34a38321f~mv2.jpg" width="250">
+</details>
+
+<details>
+  <summary><strong>Step 5: Open TaskClock Guardian</strong></summary>
+  <img src="https://static.wixstatic.com/media/cb3499_5e0ccf3b1410405c88b762e26459e809~mv2.jpg" width="250">
+</details>
+
+<details>
+  <summary><strong>Step 6: Congrats! You're done</strong></summary>
+  <img src="https://static.wixstatic.com/media/cb3499_f7eff2b63a85496cb2460f46e6c17067~mv2.jpg" width="250">
+</details>
